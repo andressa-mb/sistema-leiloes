@@ -1,3 +1,4 @@
+package Leilao.dao;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -23,6 +24,7 @@ public class conectaDAO {
 
         } catch (SQLException erro) {
             JOptionPane.showMessageDialog(null, "Erro ConectaDAO" + erro.getMessage());
+
         }
         return conn;
     }
